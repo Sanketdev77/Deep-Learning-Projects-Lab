@@ -1,0 +1,36 @@
+**Perceptron :-
+                  A perceptron is one of the simplest types of artificial neural networks. It takes several inputs, gives each input a weight, adds them together, and then decides between two possible outputs—such as 0 or 1.
+
+> How it works -
+
+Suppose the inputs are \(x_1, x_2, \dots, x_n\). Each input has a weight \(w_1, w_2, \dots, w_n\).
+
+The perceptron calculates:
+
+$$ z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b $$
+
+where \(b\) is called the bias.
+
+It then applies an activation rule, traditionally:
+
+y= {1 ​if z≥0 
+    0 if z<0​
+So you can picture it as:
+
+Inputs → Multiply by weights → Add + bias → Decision → Output
+
+For example, a perceptron could classify an email as spam (1) or not spam (0) based on features of the email.
+
+
+**Epoch & Learning Rate :-
+An epoch is one complete pass of the entire training dataset through
+the model. Learning rate is a hyperparameter that controls the size 
+of the weight updates during training. A very high learning rate can
+cause the model to overshoot the optimal solution, while a very low 
+learning rate can make training very slow.
+
+**Error & Loss Function :-
+                          Error is the difference between the actual output and the model's predicted output. During training, the model uses a loss function to quantify this error and updates its weights to reduce the error in future predictions.
+    Error → difference between prediction and actual value.
+    Loss function → mathematical function used to measure that error.
+
